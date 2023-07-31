@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -14,9 +15,7 @@ const HomePage = () => {
     dispatch(fetchCountryData());
   }, [dispatch]);
 
-  const filteredCountries = countries.filter((country) =>
-    country.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredCountries = countries.filter((country) => country.name.toLowerCase().includes(searchQuery.toLowerCase()));
 
   return (
     <div className="flex items-center flex-col text-white bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 min-h-screen">
@@ -27,7 +26,7 @@ const HomePage = () => {
           placeholder="search a country..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="py-2 pr-9 pl-3 outline-none bg-white text-black placeholder:capitalize capitalize"
+          className="rounded-lg py-2 pr-15 pl-3 outline-none bg-white text-black placeholder:capitalize capitalize"
         />
         <UilSearch size={25} className="text-white cursor-pointer px-1 mx-3" />
       </div>
