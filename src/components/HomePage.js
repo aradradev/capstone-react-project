@@ -28,7 +28,10 @@ const HomePage = () => {
           onChange={(e) => setSearchQuery(e.target.value)}
           className="rounded-lg py-2 pr-15 pl-3 outline-none bg-white text-black placeholder:capitalize capitalize"
         />
-        <UilSearch size={25} className="text-white cursor-pointer px-1 mx-3" />
+        <UilSearch
+          size={25}
+          className="text-white cursor-pointer px-1 mx-3 transition ease-out hover:scale-125"
+        />
       </div>
       <div className="container m-2 grid grid-flow-row items-center border-spacing-1">
         {filteredCountries.map((country) => (
