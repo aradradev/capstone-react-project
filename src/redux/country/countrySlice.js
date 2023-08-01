@@ -2,23 +2,19 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const url = 'https://restcountries.com/v3.1/all';
 
-export const fetchCountryData = createAsyncThunk(
-  'country/fetchData',
-  async () => {
-    const res = await fetch(url);
-    const data = await res.json();
-    console.log(data);
-    return data.map((item) => ({
-      name: item.name.common,
-      capital: item.capital,
-      continent: item.continents[0],
-      flag: item.flags.png,
-      population: item.population,
-      map: item.maps.googleMaps,
-      area: item.area,
-    }));
-  }
-);
+export const fetchCountryData = createAsyncThunk('country/fetchData', async () => {
+  const res = await fetch(url);
+  const data = await res.json();
+  return data.map((item) => ({
+    name: item.name.common,
+    capital: item.capital,
+    continent: item.continents[0],
+    flag: item.flags.png,
+    population: item.population,
+    map: item.maps.googleMaps,
+    area: item.area,
+  }));
+});
 const initialState = {
   country: [],
   isLoading: false,

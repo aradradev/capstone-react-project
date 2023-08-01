@@ -3,9 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
+import { Provider } from 'react-redux/es';
 import App from './App';
 import store from './redux/store';
-import { Provider } from 'react-redux/es';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,5 +15,5 @@ root.render(
         <App />
       </Provider>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
