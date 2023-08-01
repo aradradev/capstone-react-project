@@ -8,7 +8,10 @@ import {
 } from '@iconscout/react-unicons';
 
 const Navbar = () => (
-  <div className="text-white w-full flex items-center flex-row justify-between p-5 bg-slate-800">
+  <div
+    id="navBar"
+    className="text-white w-full flex items-center flex-row justify-between p-5 bg-slate-800"
+  >
     <Link to="/">
       <UilArrowRight />
     </Link>

@@ -3,6 +3,7 @@
 exports[`matches snapshot 1`] = `
 <div
   className="text-white w-full flex items-center flex-row justify-between p-5 bg-slate-800"
+  id="navBar"
 >
   <a
     href="/"

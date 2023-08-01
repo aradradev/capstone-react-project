@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 import { configureStore } from '@reduxjs/toolkit';
 import countryReducer from './country/countrySlice';
 

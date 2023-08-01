@@ -11,7 +11,7 @@ const DetailsPage = () => {
 
   if (!country) {
     return (
-      <div className="flex flex-col items-center text-white bg-gradient-to-br from-cyan-700 to-blue-700 min-h-screen">
+      <div className="flex flex-col items-center justify-center text-white bg-gradient-to-br from-cyan-700 to-blue-700 min-h-screen">
         <div className="w-full p-5 bg-slate-800">
           <UilArrowLeft
             className="cursor-pointer"
