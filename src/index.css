@@ -12,12 +12,27 @@
 
 .container {
   display: grid;
-  width: 100%;
   height: auto;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
   gap: 2px;
   margin: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    grid-template-columns: auto auto;
+    width: 90%;
+    gap: 1px;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .container {
+    grid-template-columns: auto;
+    width: 90%;
+    gap: 1px;
+  }
 }
 
 .container-card {
@@ -30,7 +45,6 @@
   justify-content: center;
   flex-direction: column;
   margin: 0.7rem;
-  width: 300px;
   height: 230px;
   transition-property: transform, box-shadow;
 }

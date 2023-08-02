@@ -20,7 +20,7 @@ const HomePage = () => {
   return (
     <div className="flex items-center flex-col text-white bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 min-h-screen">
       <Navbar />
-      <div className="flex flex-row items-center justify-start my-5 mx-auto">
+      <div className="flex flex-row items-center justify-center my-5 mx-auto">
         <input
           type="text"
           placeholder="search a country..."
@@ -28,9 +28,12 @@ const HomePage = () => {
           onChange={(e) => setSearchQuery(e.target.value)}
           className="rounded-lg py-2 pr-15 pl-3 outline-none bg-white text-black placeholder:capitalize capitalize"
         />
-        <UilSearch size={25} className="text-white cursor-pointer px-1 mx-3" />
+        <UilSearch
+          size={25}
+          className="text-white cursor-pointer px-1 mx-3 transition ease-out hover:scale-125"
+        />
       </div>
-      <div className="container m-2 grid grid-flow-row items-center border-spacing-1">
+      <div className="container m-2 grid grid-cols-4 grid-flow-row items-center border-spacing-1">
         {filteredCountries.map((country) => (
           <Link
             to={`/countries/${country.name}`}

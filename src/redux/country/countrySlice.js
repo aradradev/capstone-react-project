@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const url = 'https://restcountries.com/v3.1/all';
