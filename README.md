@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Countries Explorer\] ](#-countries-explorer-)
+- [📖 \[Countries Population\] ](#-countries-population-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -33,9 +33,9 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [Countries Explorer] <a name="about-project"></a>
+# 📖 [Countries Population] <a name="about-project"></a>
 
-**"Countries Explorer"** is a single-page application built with React. It fetches the data from the https://restcountries.com/ API and shows all the countries of the world. The homepage displays the country name, flag, and population for each country. When a user clicks on a country's card, they are taken to a detail page that shows more information about that country, such as its capital city, the Coat of arms of the country, and language
+**"Countries Population"** is a single-page application built with React. It fetches the data from the https://restcountries.com/ API and shows all the countries of the world. The homepage displays the country name, flag, and population for each country. When a user clicks on a country's card, they are taken to a detail page that shows more information about that country, such as its capital city, the Coat of arms of the country, and language
 
 ## 🛠 Built With <a name="built-with"></a>
 
